@@ -15,11 +15,13 @@ const { PRIVATE_KEY } = process.env;
 export const account = privateKeyToAccount(`0x${PRIVATE_KEY}`)
  
 export const publicClient = createPublicClient({
+  // @ts-ignore
   chain: baseSepolia,
   transport: http()
 })
 
 export const walletClient = createWalletClient({
+  // @ts-ignore
   chain: baseSepolia,
   transport: http()
 })
