@@ -123,7 +123,7 @@ export class Scanner {
       }
       else {
         // subscription is not redeemable yet, add to BST
-        //console.log("subscription not redeemable yet: ", indexedSub.index);
+        console.log("subscription not redeemable yet: ", indexedSub.index);
 
         this.waitingSubs.set(indexedSub.index, sub.lastPayment + sub.cooldown);
         
@@ -132,7 +132,7 @@ export class Scanner {
     }
 
     if(subIndicesToProcess.length === 0) {
-      //console.log("No subscriptions to execute");
+      console.log("No subscriptions to execute");
     }
     else {
       // maybe do some checks that that fee is up to date etc

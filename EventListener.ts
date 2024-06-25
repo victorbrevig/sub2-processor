@@ -86,7 +86,7 @@ export class EventListener {
     ]).then(([canceledSubs, updatedMaxTipSubs, createdSubs]) => {
       const allIndices = this.unionBigIntArrays(canceledSubs, updatedMaxTipSubs, createdSubs);
       if(allIndices.length > 0) {
-        //console.log("EVENTS FOUND: ", allIndices);
+        console.log("EVENTS FOUND: ", allIndices);
         this.scanner.updateIndices(allIndices);
       }
     })

@@ -35,7 +35,7 @@ async function main() {
       
       // print all bigints between blockNumber +1 and blockNum (inclusive)
       for (let i = blockNumber+1n; i <= blockNum; i++) {
-        //console.log(i);
+        console.log(i);
       }
       blockNumber = blockNum;
       }

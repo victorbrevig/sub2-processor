@@ -14,8 +14,8 @@ export class Processor {
   }
 
   async processBatch(subscriptionIndices: bigint[]) : Promise<BatchProcessingReceipt> {
-    //console.log("PROCESSING INDICES", subscriptionIndices);
-    //console.log("Processing batch of size " + subscriptionIndices.length);
+    console.log("PROCESSING INDICES", subscriptionIndices);
+    console.log("Processing batch of size " + subscriptionIndices.length);
 
     const { result, request } = await publicClient.simulateContract({
       address: BATCH_PROCESSOR_ADDRESS,
@@ -32,7 +32,7 @@ export class Processor {
       { hash: txHash }
     )
 
-    //console.log("RESULT", result);
+    console.log("RESULT", result);
 
     const batchProcessingReceipt: BatchProcessingReceipt = {
       transactionReceipt: transactionReceipt,
