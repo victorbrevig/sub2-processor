@@ -32,7 +32,7 @@ export class TokenPrices {
     this.publicClient = createPublicClient({
       chain: mainnet,
       transport: http(),
-    });;
+    }) as PublicClient;
   }
 
   async updateAllPrices() {

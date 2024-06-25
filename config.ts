@@ -4,6 +4,7 @@ import { privateKeyToAccount } from 'viem/accounts';
 import { baseSepolia } from 'viem/chains';
 
 dotenv.config();
+// @ts-ignore
 const { PRIVATE_KEY } = process.env;
 
 
