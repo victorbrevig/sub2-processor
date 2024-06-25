@@ -29,10 +29,11 @@ export class TokenPrices {
 
   constructor(chainId: number) {
     this.chainId = chainId;
+    // @ts-ignore
     this.publicClient = createPublicClient({
       chain: mainnet,
       transport: http(),
-    }) as PublicClient;
+    });
   }
 
   async updateAllPrices() {
