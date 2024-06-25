@@ -1,0 +1,19 @@
+{
+  "name": "sub2-executor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@uniswap/sdk-core": "^5.3.1",
+    "@uniswap/v2-sdk": "^4.4.1",
+    "dotenv": "^16.4.5",
+    "moralis": "^2.26.2",
+    "typescript": "^5.4.5",
+    "viem": "^2.10.5"
+  }
+}
