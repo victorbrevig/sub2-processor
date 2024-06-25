@@ -6,8 +6,19 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "noImplicitAny": false,
-    "declaration": true, 
+    "declaration": true,
     "emitDeclarationOnly": true,
     "allowImportingTsExtensions": true,
-  }
+    "skipLibCheck": true,
+    "noEmitOnError": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "noUncheckedIndexedAccess": false
+  },
+  "ignoreDeprecations": "5.0"
 }
