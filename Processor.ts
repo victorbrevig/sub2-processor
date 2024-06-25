@@ -26,7 +26,7 @@ export class Processor {
       account
     })
     const txHash: `0x${string}` = await walletClient.writeContract(request);
-    //console.log("processing... hash:" , txHash);
+    console.log("processing... hash:" , txHash);
 
     const transactionReceipt: TransactionReceipt = await publicClient.waitForTransactionReceipt( 
       { hash: txHash }
