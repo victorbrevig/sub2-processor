@@ -34,9 +34,11 @@ async function main() {
       eventListener.onNewBlocks(blockNumber+1n, blockNum);
       
       // print all bigints between blockNumber +1 and blockNum (inclusive)
+      /*
       for (let i = blockNumber+1n; i <= blockNum; i++) {
         console.log(i);
       }
+      */
       blockNumber = blockNum;
       }
     }
